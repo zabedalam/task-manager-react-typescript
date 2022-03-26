@@ -1,0 +1,88 @@
+// @import "~styles/variables.scss";
+@import '../../styles/variables.scss';
+
+.todos-screen {
+    padding: 0.6rem 0.4rem 8rem;
+
+    &__category {
+        overflow: hidden;
+
+        transition: max-height 0.4s ease-in-out;
+        max-height: 100vh;
+
+        &--collapsed {
+            transition: max-height 0.4s cubic-bezier(0, 1, 0, 1);
+            max-height: 3rem;
+            & .todos-screen__icon-more {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+
+    &__category-header {
+        height: 3rem;
+        padding-left: 0.9rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: $color-white;
+        border-radius: 0.4rem;
+
+        cursor: pointer;
+        user-select: none;
+
+        transition: background-color 0.2s ease;
+
+        &:hover {
+            background-color: rgba($color-black, 0.04);
+            & i {
+                opacity: 0.6;
+            }
+        }
+
+        & h2 {
+            display: inline;
+
+            font-size: 1.5rem;
+
+            & span {
+                color: $color-gray-2;
+                font-size: 1.2rem;
+                font-weight: 400;
+
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    &__icon-more {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+
+        background-image: url(../../assets/icons/more.svg);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: center;
+
+        opacity: 0.4;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    &__droppable-area {
+        min-height: 3rem;
+        /* background-color: tomato; */
+    }
+
+    &__empty-placeholder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+
+        font-size: 1.4rem;
+        color: $color-gray-2;
+    }
+}

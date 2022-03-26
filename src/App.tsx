@@ -1,12 +1,17 @@
-import React from 'react';
-import './App.css';
+// import EditTodoModal from 'components/EditTodoModal';
+import { ReactElement } from 'react';
+import EditTodoModal from './components/EditTodoModal';
+// import MainScreen from 'containers/MainScreen';
+import MainScreen from './containers/MainScreen';
+import './styles/global.scss';
 
-function App() {
+const App = (): ReactElement => {
     return (
-        <div className="App">
-            <h1>Hello</h1>
-        </div>
+        <>
+            <MainScreen />
+            <EditTodoModal />
+        </>
     );
-}
+};
 
 export default App;

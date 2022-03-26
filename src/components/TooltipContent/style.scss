@@ -1,0 +1,93 @@
+@import '../../styles/variables.scss';
+
+.tooltip-content {
+    color: $color-gray-3;
+    /* border: .1rem solid red; */
+
+    &__header {
+        font-size: 1.2rem;
+        font-weight: 400;
+
+        margin-bottom: 0.7rem;
+    }
+
+    &__group {
+        display: flex;
+        justify-content: space-evenly;
+
+        min-width: 10rem;
+
+        margin-bottom: 0.9rem;
+    }
+}
+
+/* Overwrites */
+
+.__react_component_tooltip {
+    padding: 0.8rem 1rem !important;
+    opacity: 1 !important;
+}
+
+.react-calendar {
+    color: $color-gray-3;
+    width: 15rem;
+    border: none;
+
+    &__navigation {
+        max-height: 2rem;
+        margin-bottom: 0.6rem;
+
+        &__arrow {
+            min-width: 2rem !important;
+            border-radius: 0.4rem;
+        }
+
+        &__label {
+            border-radius: 0.4rem;
+        }
+
+        &__prev2-button,
+        &__next2-button {
+            display: none;
+        }
+    }
+
+    &__month-view__weekdays__weekday {
+        padding: 0;
+        font-size: 0.8rem;
+    }
+
+    &__tile {
+        width: 2rem;
+        height: 2rem;
+
+        padding: 0;
+        border-radius: 0.4rem;
+
+        &--active {
+            background-color: $color-blue !important;
+        }
+
+        &--now {
+            background-color: rgba($color-yellow, 0.2);
+        }
+    }
+
+    &__year-view__months__month {
+        padding: 0.8rem !important;
+        flex-basis: 50% !important;
+        max-width: 50% !important;
+        height: auto;
+        font-size: 1.3rem;
+    }
+
+    &__decade-view__years__year {
+        padding: 0.8rem !important;
+        height: auto;
+    }
+
+    &__century-view__decades__decade {
+        padding: 0.8rem !important;
+        height: auto;
+    }
+}
