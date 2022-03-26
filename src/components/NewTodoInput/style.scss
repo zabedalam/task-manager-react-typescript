@@ -5,8 +5,7 @@
     &__form {
         position: relative;
         display: flex;
-
-        margin-bottom: 0.8rem;
+        margin-bottom: 8px;
 
         &:hover {
             & > .new-todo__icon {
@@ -17,17 +16,13 @@
 
     &__input {
         display: inline-flex;
-
-        height: 4rem;
+        height: 40px;
         flex: 1;
-
-        font-size: 1.4rem;
+        font-size: 15px;
         font-weight: 500;
-
-        padding: 0.4rem 6.8rem 0.4rem 1.3rem;
-        border: 0.1rem solid $color-gray-1;
-        border-radius: 0.4rem;
-
+        padding: 4px 50px 4px 15px;
+        border: 1px solid $color-gray-1;
+        border-radius: 4px;
         outline: none;
         cursor: default;
     }
@@ -38,19 +33,14 @@
     }
 
     &__icon {
-        width: 2.6rem;
-        height: 2.6rem;
-
+        width: 28px;
+        height: 28px;
         position: absolute;
-
         background-position: center;
         background-repeat: no-repeat;
-
-        border-radius: 0.4rem;
-
+        border-radius: 4px;
         opacity: 0.4;
         cursor: pointer;
-
         transition: opacity 0.2s ease, background-color 0.2s ease;
 
         &:hover {
@@ -59,19 +49,15 @@
     }
 
     &__icon-send {
-        right: 0.7rem;
-        top: 0.7rem;
-
-        // background-image: url('~assets/icons/send.svg');
+        right: 7px;
+        top: 7px;
         background-image: url('../../assets/icons/send.svg');
-
         background-size: 65%;
     }
 
     &__icon-tune {
-        right: 3.8rem;
-        top: 0.7rem;
-
+        right: 32px;
+        top: 7px;
         background-image: url('../../assets/icons/tune.svg');
         background-size: 70%;
     }

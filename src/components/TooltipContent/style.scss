@@ -2,48 +2,42 @@
 
 .tooltip-content {
     color: $color-gray-3;
-    /* border: .1rem solid red; */
 
     &__header {
-        font-size: 1.2rem;
+        font-size: 17px;
         font-weight: 400;
-
-        margin-bottom: 0.7rem;
+        margin-bottom: 7px;
     }
 
     &__group {
         display: flex;
         justify-content: space-evenly;
-
-        min-width: 10rem;
-
-        margin-bottom: 0.9rem;
+        min-width: 100px;
+        margin-bottom: 9px;
     }
 }
 
-/* Overwrites */
-
 .__react_component_tooltip {
-    padding: 0.8rem 1rem !important;
+    padding: 8px 10px !important;
     opacity: 1 !important;
 }
 
 .react-calendar {
     color: $color-gray-3;
-    width: 15rem;
+    width: 150px;
     border: none;
 
     &__navigation {
-        max-height: 2rem;
-        margin-bottom: 0.6rem;
+        max-height: 20px;
+        margin-bottom: 6px;
 
         &__arrow {
-            min-width: 2rem !important;
-            border-radius: 0.4rem;
+            min-width: 20px !important;
+            border-radius: 4px;
         }
 
         &__label {
-            border-radius: 0.4rem;
+            border-radius: 4px;
         }
 
         &__prev2-button,
@@ -54,15 +48,15 @@
 
     &__month-view__weekdays__weekday {
         padding: 0;
-        font-size: 0.8rem;
+        font-size: 8px;
     }
 
     &__tile {
-        width: 2rem;
-        height: 2rem;
+        width: 20px;
+        height: 20px;
 
         padding: 0;
-        border-radius: 0.4rem;
+        border-radius: 4px;
 
         &--active {
             background-color: $color-blue !important;
@@ -74,20 +68,20 @@
     }
 
     &__year-view__months__month {
-        padding: 0.8rem !important;
+        padding: 8px !important;
         flex-basis: 50% !important;
         max-width: 50% !important;
         height: auto;
-        font-size: 1.3rem;
+        font-size: 17px;
     }
 
     &__decade-view__years__year {
-        padding: 0.8rem !important;
+        padding: 8px !important;
         height: auto;
     }
 
     &__century-view__decades__decade {
-        padding: 0.8rem !important;
+        padding: 8px !important;
         height: auto;
     }
 }

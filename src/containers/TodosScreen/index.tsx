@@ -38,7 +38,7 @@ const TodosScreen = ({ removeTodo, updateAllTodos }: Props): ReactElement => {
         <div className="todos-screen">
             <DragDropContext onDragEnd={(result) => onDragEnd(result, todoCategories, updateAllTodos)}>
                 {Object.entries(todoCategories).map(([categoryKey, category]) => (
-                    <div key={categoryKey} className="todos-screen__category" id={categoryKey}>
+                    <div key={categoryKey} className="todos-screen__category todos-screen__todos" id={categoryKey}>
                         <header className="todos-screen__category-header" onClick={() => onHeaderClick(categoryKey)}>
                             <h2>
                                 {category.visibleName}

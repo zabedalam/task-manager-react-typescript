@@ -2,11 +2,14 @@
 @import '../../styles/variables.scss';
 
 .todos-screen {
-    padding: 0.6rem 0.4rem 8rem;
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
 
     &__category {
         overflow: hidden;
-
         transition: max-height 0.4s ease-in-out;
         max-height: 100vh;
 
@@ -20,19 +23,15 @@
     }
 
     &__category-header {
-        height: 3rem;
-        padding-left: 0.9rem;
-
+        height: 32px;
+        padding-left: 15px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
         background-color: $color-white;
-        border-radius: 0.4rem;
-
+        border-radius: 5px;
         cursor: pointer;
         user-select: none;
-
         transition: background-color 0.2s ease;
 
         &:hover {
@@ -45,44 +44,50 @@
         & h2 {
             display: inline;
 
-            font-size: 1.5rem;
+            font-size: 17px;
 
             & span {
                 color: $color-gray-2;
-                font-size: 1.2rem;
+                font-size: 15px;
                 font-weight: 400;
-
-                margin-left: 1rem;
+                margin-left: 16px;
             }
         }
     }
 
     &__icon-more {
         display: inline-block;
-        width: 3rem;
-        height: 3rem;
-
+        width: 40px;
+        height: 40px;
         background-image: url(../../assets/icons/more.svg);
         background-repeat: no-repeat;
         background-size: 80%;
         background-position: center;
-
         opacity: 0.4;
         transition: opacity 0.2s ease, transform 0.2s ease;
     }
 
     &__droppable-area {
-        min-height: 3rem;
-        /* background-color: tomato; */
+        min-height: 40px;
     }
 
     &__empty-placeholder {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 3rem;
-
-        font-size: 1.4rem;
+        height: 40px;
+        font-size: 10px;
         color: $color-gray-2;
+    }
+
+    &__todos {
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        width: 47.5%;
+        padding: 15px;
+        min-height: 50px;
+        background-color: rgb(50, 195, 205);
+        font-size: 15px;
     }
 }

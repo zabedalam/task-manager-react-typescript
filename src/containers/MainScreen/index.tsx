@@ -28,7 +28,10 @@ const MainScreen = (): ReactElement => {
     return (
         <div className="main-screen">
             <h2 className="main-screen__header">Task Manager</h2>
-            <NewTodoInput createTodo={createTodo} />
+            <div className="main-screen__head">
+                <NewTodoInput createTodo={createTodo} />
+            </div>
+
             <TodosScreen removeTodo={removeTodo} updateAllTodos={updateAllTodos} />
         </div>
     );

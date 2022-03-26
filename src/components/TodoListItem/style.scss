@@ -4,14 +4,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    min-height: 2.4rem;
-    padding: 0 0.9rem 0.5rem;
-    margin: 0.5rem 0.9rem 0;
-
+    min-height: 20px;
+    padding: 0 9px 5px;
+    margin-top: 2px;
+    border-radius: 5px;
+    width: 100%;
     background-color: $color-white;
-    border-bottom: 0.1rem solid $color-gray-1;
-
+    border-bottom: 1px solid $color-gray-1;
     transition: border-color 0.1s ease;
     user-select: none;
 
@@ -33,7 +32,7 @@
             opacity: 0.4;
             & .todo-list-item__checkbox {
                 border-color: $color-gray-2 !important;
-                border-bottom-width: 0.1rem !important;
+                border-bottom-width: 1px !important;
             }
 
             & .todo-list-item__icon-check {
@@ -53,19 +52,19 @@
         &-Low {
             & .todo-list-item__checkbox {
                 border-color: $color-blue;
-                border-bottom-width: 0.2rem;
+                border-bottom-width: 2px;
             }
         }
         &-Medium {
             & .todo-list-item__checkbox {
                 border-color: $color-yellow;
-                border-bottom-width: 0.2rem;
+                border-bottom-width: 2px;
             }
         }
         &-High {
             & .todo-list-item__checkbox {
                 border-color: $color-red;
-                border-bottom-width: 0.2rem;
+                border-bottom-width: 2px;
             }
         }
     }
@@ -77,17 +76,14 @@
     &__group {
         display: flex;
         align-items: center;
-
-        width: calc(100% - 2.8rem);
+        width: calc(100% - 24px);
     }
 
     &__row {
         display: flex;
         align-items: center;
         justify-content: space-between;
-
-        min-height: 2rem;
-        /* border: .1rem solid tomato; */
+        min-height: 20px;
     }
 
     &__title {
@@ -98,8 +94,8 @@
     }
 
     &__due-date {
-        font-size: 1.4rem;
-        margin-left: 2.4rem;
+        font-size: 12px;
+        margin-left: 22px;
         color: $color-blue;
     }
 
@@ -107,15 +103,13 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 1.6rem;
-        height: 1.6rem;
-        min-width: 1.6rem;
+        width: 15px;
+        height: 15px;
+        min-width: 15px;
 
         border: 0.1rem solid $color-gray-2;
-        border-radius: 0.2rem;
-
-        margin-right: 0.8rem;
-
+        border-radius: 2px;
+        margin-right: 8px;
         cursor: pointer;
 
         transition: border-color 0.2s ease, border-width 0.2s ease;
@@ -129,37 +123,30 @@
 
     &__icon-tune {
         display: inline-block;
-        width: 2rem;
-        height: 2.4rem;
-        min-width: 2rem;
-
-        margin-right: 0.4rem;
-
+        width: 20px;
+        height: 24px;
+        min-width: 20px;
+        margin-right: 4px;
         background-image: url(../../assets/icons/tune.svg);
         background-size: 90%;
         background-position: center;
         background-repeat: no-repeat;
-
         opacity: 0;
         cursor: pointer;
-
         transition: opacity 0.1s ease;
     }
 
     &__icon-remove {
         display: inline-block;
-        width: 2rem;
-        height: 2.4rem;
-        min-width: 2rem;
-
+        width: 20px;
+        height: 24px;
+        min-width: 20px;
         background-image: url(../../assets/icons/remove.svg);
         background-size: 90%;
         background-position: center;
         background-repeat: no-repeat;
-
         opacity: 0;
         cursor: pointer;
-
         transition: opacity 0.1s ease;
     }
 
@@ -167,7 +154,6 @@
         display: inline-block;
         width: 100%;
         height: 100%;
-
         background-image: url(../../assets/icons/check.svg);
         background-repeat: no-repeat;
         background-size: cover;
