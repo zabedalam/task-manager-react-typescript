@@ -1,0 +1,41 @@
+@import "./font.scss";
+
+html {
+	height: 100%;
+
+	font-family: "Silka";
+	font-size: 10px;
+
+	overflow: hidden;
+}
+
+body {
+	height: 100%;
+	font-size: 1.6rem;
+}
+
+#root {
+	height: 100%;
+	overflow-y: auto;
+	user-select: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+
+	font-family: inherit;
+	box-sizing: border-box;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}

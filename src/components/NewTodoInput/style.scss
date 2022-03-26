@@ -1,0 +1,75 @@
+@import "~styles/variables.scss";
+
+.new-todo {
+	&__form {
+		position: relative;
+		display: flex;
+
+		margin-bottom: 0.8rem;
+
+		&:hover {
+			& > .new-todo__icon {
+				opacity: 0.6;
+			}
+		}
+	}
+
+	&__input {
+		display: inline-flex;
+
+		height: 4rem;
+		flex: 1;
+
+		font-size: 1.4rem;
+		font-weight: 500;
+
+		padding: 0.4rem 6.8rem 0.4rem 1.3rem;
+		border: 0.1rem solid $color-gray-1;
+		border-radius: 0.4rem;
+
+		outline: none;
+		cursor: default;
+	}
+
+	&__button {
+		border-color: $color-gray-1;
+		background-color: $color-white;
+	}
+
+	&__icon {
+		width: 2.6rem;
+		height: 2.6rem;
+
+		position: absolute;
+
+		background-position: center;
+		background-repeat: no-repeat;
+
+		border-radius: 0.4rem;
+
+		opacity: 0.4;
+		cursor: pointer;
+
+		transition: opacity 0.2s ease, background-color 0.2s ease;
+
+		&:hover {
+			background-color: rgba($color-black, 0.1);
+		}
+	}
+
+	&__icon-send {
+		right: 0.7rem;
+		top: 0.7rem;
+
+		background-image: url("~assets/icons/send.svg");
+		background-size: 65%;
+	}
+
+	&__icon-tune {
+		right: 3.8rem;
+		top: 0.7rem;
+
+		background-image: url("~assets/icons/tune.svg");
+		background-size: 70%;
+	}
+}

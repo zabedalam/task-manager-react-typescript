@@ -1,0 +1,179 @@
+@import "~styles/variables.scss";
+
+.todo-list-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	min-height: 2.4rem;
+	padding: 0 0.9rem 0.5rem;
+	margin: 0.5rem 0.9rem 0;
+
+	background-color: $color-white;
+	border-bottom: 0.1rem solid $color-gray-1;
+
+	transition: border-color 0.1s ease;
+	user-select: none;
+
+	&:hover {
+		& .todo-list-item__icon-tune {
+			opacity: 0.4;
+		}
+		& .todo-list-item__icon-remove {
+			opacity: 0.4;
+		}
+	}
+
+	&:last-child {
+		border-color: transparent;
+	}
+
+	&--type {
+		&-Done {
+			opacity: 0.4;
+			& .todo-list-item__checkbox {
+				border-color: $color-gray-2 !important;
+				border-bottom-width: 0.1rem !important;
+			}
+
+			& .todo-list-item__icon-check {
+				opacity: 1;
+			}
+
+			& .todo-list-item__due-date {
+				color: $color-gray-2;
+				& span {
+					color: $color-gray-2;
+				}
+			}
+		}
+	}
+
+	&--priority {
+		&-Low {
+			& .todo-list-item__checkbox {
+				border-color: $color-blue;
+				border-bottom-width: 0.2rem;
+			}
+		}
+		&-Medium {
+			& .todo-list-item__checkbox {
+				border-color: $color-yellow;
+				border-bottom-width: 0.2rem;
+			}
+		}
+		&-High {
+			& .todo-list-item__checkbox {
+				border-color: $color-red;
+				border-bottom-width: 0.2rem;
+			}
+		}
+	}
+
+	&--overdue {
+		color: $color-red;
+	}
+
+	&__group {
+		display: flex;
+		align-items: center;
+
+		width: calc(100% - 2.8rem);
+	}
+
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		min-height: 2rem;
+		/* border: .1rem solid tomato; */
+	}
+
+	&__title {
+		max-width: 100%;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	&__due-date {
+		font-size: 1.4rem;
+		margin-left: 2.4rem;
+		color: $color-blue;
+	}
+
+	&__checkbox {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 1.6rem;
+		height: 1.6rem;
+		min-width: 1.6rem;
+
+		border: 0.1rem solid $color-gray-2;
+		border-radius: 0.2rem;
+
+		margin-right: 0.8rem;
+
+		cursor: pointer;
+
+		transition: border-color 0.2s ease, border-width 0.2s ease;
+
+		&:hover {
+			& .todo-list-item__icon-check {
+				opacity: 0.4;
+			}
+		}
+	}
+
+	&__icon-tune {
+		display: inline-block;
+		width: 2rem;
+		height: 2.4rem;
+		min-width: 2rem;
+
+		margin-right: 0.4rem;
+
+		background-image: url(~assets/icons/tune.svg);
+		background-size: 90%;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		opacity: 0;
+		cursor: pointer;
+
+		transition: opacity 0.1s ease;
+	}
+
+	&__icon-remove {
+		display: inline-block;
+		width: 2rem;
+		height: 2.4rem;
+		min-width: 2rem;
+
+		background-image: url(~assets/icons/remove.svg);
+		background-size: 90%;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		opacity: 0;
+		cursor: pointer;
+
+		transition: opacity 0.1s ease;
+	}
+
+	&__icon-check {
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+
+		background-image: url(~assets/icons/check.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+
+		transition: opacity 0.1s ease;
+		opacity: 0;
+	}
+}
