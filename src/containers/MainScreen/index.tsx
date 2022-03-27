@@ -1,12 +1,8 @@
-// import NewTodoInput from 'components/NewTodoInput';
 import { ReactElement, useCallback } from 'react';
 import { useDispatch } from 'react-redux';
 import NewTodoInput from '../../components/NewTodoInput';
-// import TodosScreen from 'containers/TodosScreen';
 import TodosScreen from '../../containers/TodosScreen';
-// import TodoItem, { Guid } from 'scripts/classes/TodoItem';
 import TodoItem, { Guid } from '../../scripts/classes/TodoItem';
-// import { createTodoItem, removeTodoItem, TodosState, updateAllTodoItems } from 'store';
 import { createTodoItem, removeTodoItem, TodosState, updateAllTodoItems } from '../../store';
 import './style.scss';
 

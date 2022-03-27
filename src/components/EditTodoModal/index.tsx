@@ -1,4 +1,3 @@
-// import TooltipContent from 'components/TooltipContent';
 import { ReactElement, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import ReactTooltip from 'react-tooltip';

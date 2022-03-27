@@ -1,7 +1,6 @@
 import { FormEvent, ReactElement } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectNewTodo, updateNewTodoItem } from '../../../src/store';
-// import TodoItem from 'scripts/classes/TodoItem';
 import TodoItem from '../../scripts/classes/TodoItem';
 import './style.scss';
 

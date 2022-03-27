@@ -1,7 +1,5 @@
 import { ReactElement } from 'react';
-// import { OneDayInMs, TodoCategory, TodosState } from 'store';
 import { OneDayInMs, TodoCategory, TodosState } from '../store';
-// import TodoItem, { Guid } from './classes/TodoItem';
 import TodoItem, { Guid } from './classes/TodoItem';
 
 const prettyDate = (date: Date): string => {

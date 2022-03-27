@@ -1,11 +1,8 @@
 import { ReactElement } from 'react';
 import { DraggableProvided, DraggableStateSnapshot } from 'react-beautiful-dnd';
 import { useDispatch } from 'react-redux';
-// import TodoItem from 'scripts/classes/TodoItem';
 import TodoItem from '../../scripts/classes/TodoItem';
-// import { formatDate } from 'scripts/utils';
 import { formatDate } from '../../scripts/utils';
-// import { changeTodoItemCategory, removeTodoItem, TodoCategory } from 'store';
 import { changeTodoItemCategory, removeTodoItem, TodoCategory } from '../../store';
 import './style.scss';
 

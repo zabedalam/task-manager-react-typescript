@@ -2,13 +2,9 @@ import { ReactElement, useEffect, useState } from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import { useDispatch, useSelector } from 'react-redux';
-// import TodoItem, { Guid, Priority } from 'scripts/classes/TodoItem';
 import TodoItem, { Guid, Priority } from '../../scripts/classes/TodoItem';
-// import { getTodoFromCategories } from 'scripts/utils';
 import { getTodoFromCategories } from '../../scripts/utils';
-// import { selectNewTodo, selectTodoCategories, updateNewTodoItem, updateTodoItem } from 'store';
 import { selectNewTodo, selectTodoCategories, updateNewTodoItem, updateTodoItem } from '../../store';
-// import TooltipPriority from 'components/TooltipPriority';
 import TooltipPriority from '../TooltipPriority';
 import './style.scss';
 

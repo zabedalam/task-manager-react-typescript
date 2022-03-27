@@ -1,15 +1,10 @@
-// import TodoListItem from 'components/TodoListItem';
 import { ReactElement } from 'react';
 import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import { useSelector } from 'react-redux';
 import TodoListItem from '../../components/TodoListItem';
-// import TodoItem, { Guid } from 'scripts/classes/TodoItem';
 import TodoItem, { Guid } from '../../scripts/classes/TodoItem';
-// import { onDragEnd } from 'scripts/draggableUtils';
 import { onDragEnd } from '../../scripts/draggableUtils';
-// import { placeholderMessage } from 'scripts/utils';
 import { placeholderMessage } from '../../scripts/utils';
-// import { selectTodoCategories, TodosState } from 'store';
 import { selectTodoCategories, TodosState } from '../../store';
 import './style.scss';
 

@@ -1,5 +1,4 @@
 import { DropResult } from 'react-beautiful-dnd';
-// import { TodosState } from 'store';
 import { TodosState } from '../store';
 
 const onDragEnd = (

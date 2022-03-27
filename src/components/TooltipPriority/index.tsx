@@ -1,5 +1,4 @@
 import { ReactElement } from 'react';
-// import { Priority } from 'scripts/classes/TodoItem';
 import { Priority } from '../../scripts/classes/TodoItem';
 import './style.scss';
 
