@@ -43,7 +43,7 @@ const initialState: TodosState = {
             visibleName: 'Doing',
             items: [
                 new TodoItem('Write blog post', 'No', DateInWeek),
-                new TodoItem('Revamp online calculator', 'No', DateYesterday),
+                new TodoItem('Sketch for demo', 'No', DateYesterday),
             ],
         },
         done: {

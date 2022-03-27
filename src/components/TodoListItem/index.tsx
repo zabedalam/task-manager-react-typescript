@@ -40,7 +40,7 @@ const TodoListItem = ({ todo, status, draggableProps: { provided } }: Props): Re
             ref={provided.innerRef}
             {...provided.draggableProps}
             {...provided.dragHandleProps}
-            style={{ ...provided.draggableProps.style }}
+            // style={{ ...provided.draggableProps.style }}
         >
             <div className="todo-list-item__row">
                 <div className="todo-list-item__group">
