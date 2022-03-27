@@ -1,5 +1,4 @@
 import { configureStore, createSlice, PayloadAction } from '@reduxjs/toolkit';
-// import { InternalData } from './components/TooltipContent';
 import { InternalData } from './components/TooltipContent';
 import TodoItem, { Guid } from './scripts/classes/TodoItem';
 
